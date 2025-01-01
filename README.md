@@ -93,7 +93,7 @@ Lookup tables are critical in AES implementations due to their ability to:
 
    ```bash
    git clone https://github.com/Moh-Gebril/Generate-AES-Lookup-Tables.git
-   cd Generate-AES-Lookup-Tables
+   cd Generate-AES-Lookup-Tables/src
    ```
 
 2. Run the script to generate and display the lookup tables:
