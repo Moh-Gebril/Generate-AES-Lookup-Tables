@@ -33,10 +33,11 @@ We enter each possible value for the input plain text to the linear combination 
 
 **Example:** a = 0x00
 
-T<sub>0</sub> [0x00] = S[0x00] x 0x02 = 0x63 x 0x02 = 0xc6 <br>
-S[0x00] = 0x63 <br>
-S[0x00] = 0x63 <br>
-S[0x00] x 0x03 = 0xa5
+**T<sub>0</sub> [0x00]**: <br>
+    S[0x00] x 0x02 = 0x63 x 0x02 = 0xc6 <br>
+    S[0x00] = 0x63 <br>
+    S[0x00] = 0x63 <br>
+    S[0x00] x 0x03 = 0xa5
 
 Hence, T<sub>0</sub> [0x00] = 0xc66363a5
 
@@ -88,8 +89,8 @@ Lookup tables are critical in AES implementations due to their ability to:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Moh-Gebril/generate-aes-lookup-tables.git
-   cd generate-aes-lookup-tables
+   git clone https://github.com/Moh-Gebril/Generate-AES-Lookup-Tables.git
+   cd Generate-AES-Lookup-Tables
    ```
 
 2. Run the script to generate and display the lookup tables:
