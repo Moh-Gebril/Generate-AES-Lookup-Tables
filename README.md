@@ -33,25 +33,10 @@ We enter each possible value for the input plain text to the linear combination 
 
 **Example:** a = 0x00
 
-T<sub>0</sub> [0x00] = S[0x00] x 0x02 = 0x63 x 0x02 = 0xc6
-S[0x00] = 0x63
-S[0x00] = 0x63
+T<sub>0</sub> [0x00] = S[0x00] x 0x02 = 0x63 x 0x02 = 0xc6 <br>
+S[0x00] = 0x63 <br>
+S[0x00] = 0x63 <br>
 S[0x00] x 0x03 = 0xa5
-
-Hence, T<sub>0</sub> [0x00] = 0xc66363a5
-
-and so on for the rest of the values until 0xff, And by that we construct the first column of the state matrix.
-
-For T<sub>1</sub>, T<sub>2</sub>, and T<sub>3</sub> we construct them in the same way and hence we construct the last 3 columns of the state matrix.
-
-We enter each possible value for the input plain text to the linear combination equation and construct the lookup table entries values.
-
-**Example:** a = 0x00
-
-T<sub>0</sub> [0x00] = S[0x00] _ 0x02 = 0x63 _ 0x02 = 0xc6
-S[0x00] = 0x63
-S[0x00] = 0x63
-S[0x00] \* 0x03 = 0xa5
 
 Hence, T<sub>0</sub> [0x00] = 0xc66363a5
 
@@ -82,13 +67,13 @@ Let's do it for the second column: T<sub>0</sub> [0x04] = , T<sub>1</sub> [0x05]
 
 Then:
 
-- e<sub>0<\sub> = T<sub>0</sub> [0x00] ⊕ T<sub>1</sub> [0x01] ⊕ T<sub>2</sub> [0x02] ⊕ T<sub>3</sub> [0x03]
+- e<sub>0</sub> = T<sub>0</sub> [0x00] ⊕ T<sub>1</sub> [0x01] ⊕ T<sub>2</sub> [0x02] ⊕ T<sub>3</sub> [0x03]
 
-- e<sub>1<\sub> = T<sub>0</sub> [0x04] ⊕ T<sub>1</sub> [0x05] ⊕ T<sub>2</sub> [0x06] ⊕ T<sub>3</sub> [0x07]
+- e<sub>1</sub> = T<sub>0</sub> [0x04] ⊕ T<sub>1</sub> [0x05] ⊕ T<sub>2</sub> [0x06] ⊕ T<sub>3</sub> [0x07]
 
-- e<sub>2<\sub> = T<sub>0</sub> [0x08] ⊕ T<sub>1</sub> [0x09] ⊕ T<sub>2</sub> [0x0A] ⊕ T<sub>3</sub> [0x0B]
+- e<sub>2</sub> = T<sub>0</sub> [0x08] ⊕ T<sub>1</sub> [0x09] ⊕ T<sub>2</sub> [0x0A] ⊕ T<sub>3</sub> [0x0B]
 
-- e<sub>3<\sub> = T<sub>0</sub> [0x0C] ⊕ T<sub>1</sub> [0x0E] ⊕ T<sub>2</sub> [0x0F] ⊕ T<sub>3</sub> [0x00]
+- e<sub>3</sub> = T<sub>0</sub> [0x0C] ⊕ T<sub>1</sub> [0x0E] ⊕ T<sub>2</sub> [0x0F] ⊕ T<sub>3</sub> [0x00]
 
 ## Importance of Lookup Tables
 
