@@ -60,14 +60,17 @@ Then we apply then we work column by column, for each column,:
 3rd entry -> T<sub>2</sub>
 4th entry -> T<sub>3</sub>
 
-Let's do it for the first column: T<sub>0</sub> [0x00] = 0xc66363a5U, T<sub>1</sub> [0x01] = 0x84f87c7cU , T<sub>2</sub> [0x02] = 0x7799ee77U, T<sub>3</sub> [0x03] = 0x7b7b8df6U
-and so on for the rest of the tables
-Let's do it for the second column: T<sub>0</sub> [0x04] = , T<sub>1</sub> [0x05] = , T<sub>2</sub> [0x06] = , T<sub>3</sub> [0x07] =  
- Let's do it for the third column: T<sub>0</sub> [0x08] = , T<sub>1</sub> [0x09] = , T<sub>2</sub> [0x0A] = , T<sub>3</sub> [0x0B] =  
- Let's do it for the fourth column: T<sub>0</sub> [0x0C] = , T<sub>1</sub> [0x0E] = , T<sub>2</sub> [0x0F] = , T<sub>3</sub> [0x00] =
+Let's do it for the first column: <br>
+T<sub>0</sub> [0x00] = 0xc66363a5U, T<sub>1</sub> [0x01] = 0x84f87c7cU , T<sub>2</sub> [0x02] = 0x7799ee77U, T<sub>3</sub> [0x03] = 0x7b7b8df6U <br>
+and so on for the rest of the tables. <br>
+
+Let's do it for the second column: T<sub>0</sub> [0x04] = , T<sub>1</sub> [0x05] = , T<sub>2</sub> [0x06] = , T<sub>3</sub> [0x07] =  <br>
+
+Let's do it for the third column: T<sub>0</sub> [0x08] = , T<sub>1</sub> [0x09] = , T<sub>2</sub> [0x0A] = , T<sub>3</sub> [0x0B] =  <br>
+
+Let's do it for the fourth column: T<sub>0</sub> [0x0C] = , T<sub>1</sub> [0x0E] = , T<sub>2</sub> [0x0F] = , T<sub>3</sub> [0x00] = <br>
 
 Then:
-
 - e<sub>0</sub> = T<sub>0</sub> [0x00] ⊕ T<sub>1</sub> [0x01] ⊕ T<sub>2</sub> [0x02] ⊕ T<sub>3</sub> [0x03]
 
 - e<sub>1</sub> = T<sub>0</sub> [0x04] ⊕ T<sub>1</sub> [0x05] ⊕ T<sub>2</sub> [0x06] ⊕ T<sub>3</sub> [0x07]
