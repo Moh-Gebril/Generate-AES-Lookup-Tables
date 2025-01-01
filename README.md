@@ -99,7 +99,7 @@ Lookup tables are critical in AES implementations due to their ability to:
 2. Run the script to generate and display the lookup tables:
 
    ```bash
-   python generate_tables.py
+   python3 generate_aes_lookup_tables.py
    ```
 
 3. Output tables will be printed in C-style array format for easy integration into other projects.
